@@ -1,0 +1,172 @@
+:root {
+  --color: #165f22;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--color);
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  height: 90vh;
+  width: 90vw;
+  background-color: #fff;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1vh;
+}
+
+.container > :not(:last-child) {
+  border-bottom: 2px solid #ccc;
+}
+
+.container .inner {
+  width: 70%;
+  height: 30%;
+  display: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .inner form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2vh;
+}
+
+.container .inner form label {
+  font-size: 2vmax;
+  margin-top: 2vh;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 5px #00000080);
+          filter: drop-shadow(0 0 5px #00000080);
+}
+
+.container .inner form input {
+  height: 2vh;
+  width: 10vmax;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  padding: 2vh 1vw;
+  font-size: 1.5vmax;
+  -webkit-filter: drop-shadow(0 0 5px #00000080);
+          filter: drop-shadow(0 0 5px #00000080);
+}
+
+.container .inner form input :focus {
+  border: none;
+  outline: none;
+}
+
+.container .inner form button {
+  font-size: 1.5vmax;
+  padding: .75vh .75vw;
+  background-color: var(--color);
+  border-radius: .5vh;
+  color: #fff;
+  margin: 0 0 2vh 0;
+  -webkit-filter: drop-shadow(0 0 5px #00000080);
+          filter: drop-shadow(0 0 5px #00000080);
+  cursor: pointer;
+}
+
+.container .result {
+  width: calc(70% - 8vw);
+  height: auto;
+  padding: 2vh 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .result .pieceitem {
+  margin: 1vh 2vh;
+  height: auto;
+  width: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1vh 0;
+  -webkit-filter: drop-shadow(0 0 5px #00000080);
+          filter: drop-shadow(0 0 5px #00000080);
+}
+
+.container .result .pieceitem label {
+  font-size: 3vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .result .pieceitem input[type=text] {
+  height: 5vh;
+  width: 8vw;
+  border: none;
+  outline: none;
+  padding: 0 1vw;
+  font-size: 2.5vh;
+}
+
+.container .result .pieceitem input[type=text] :focus {
+  border: none;
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */
